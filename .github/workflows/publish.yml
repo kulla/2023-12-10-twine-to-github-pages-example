@@ -15,13 +15,8 @@ jobs:
       - name: Install Flatpak
         run: |
           sudo apt update
-          sudo apt install flatpak -y
+          sudo apt install flatpak flatpak-builder -y
           flatpak --version
-
-      - name: Install Flatpak Builder
-        run: |
-          flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-          flatpak install flathub org.flatpak.Builder -y
           flatpak-builder --version
 
       - name: Install tweego
