@@ -8,9 +8,9 @@ modules:
   - name: tweego
     buildsystem: simple
     build-commands:
-      - unzip tweego-2.1.1-linux-x86.zip -d /app/bin
+      - unzip tweego-2.1.1-linux-x64.zip -d /app/bin
       - chmod +x /app/bin/tweego
     sources:
       - type: file
-        url: https://github.com/tmedwards/tweego/releases/download/v2.1.1/tweego-2.1.1-linux-x86.zip
-        sha256: 789bbd77c322c77d3978c2d38733b159c9d4d8fa82609c9a99993a63b9ce14da
+        url: https://github.com/tmedwards/tweego/releases/download/v2.1.1/tweego-2.1.1-linux-x64.zip
+        sha256: 2ed11c3aa66c88ec5382b51061c7782152632b88916777428ab57a66feb7e5aa
