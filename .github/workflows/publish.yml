@@ -20,6 +20,7 @@ jobs:
 
       - name: Install Flatpak Builder
         run: |
+          flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
           flatpak install flathub org.flatpak.Builder -y
           flatpak-builder --version
 
