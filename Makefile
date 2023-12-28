@@ -20,7 +20,7 @@ help:
 	@echo "run     – Run tweego with story.twee"
 
 install:
-	flatpak install flathub org.freedesktop.Platform//23.08 \
+	flatpak install --assumeyes flathub org.freedesktop.Platform//23.08 \
 		org.freedesktop.Sdk//23.08
 	flatpak-builder --user --install --force-clean $(BUILD_DIR) $(MANIFEST)
 
