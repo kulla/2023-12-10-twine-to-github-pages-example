@@ -20,6 +20,12 @@ jobs:
           flatpak --version
           flatpak-builder --version
 
+      - name: Install platform and SDK for flatpak
+        run: >
+          sudo flatpak install --assumeyes flathub
+            org.freedesktop.Platform//23.08
+            org.freedesktop.Sdk//23.08
+
       - name: Install tweego
         run: make install
 
