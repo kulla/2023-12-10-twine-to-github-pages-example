@@ -1,4 +1,12 @@
-:: start
+:: StoryTitle
+Twine to GitHub Pages Example
+
+:: StoryData
+{
+        "ifid": "8E1BA924-26C4-4E13-BEF5-ACC9B32FD0DF"
+}
+
+:: Start
 Once upon a time, in a land far, far away, there was a brave knight named [Sir Lancelot](lancelot). He was known for his courage and loyalty.
 
 [The Kingdom of Camelot](kingdom) was in danger, and the king needed a hero to [defend the realm](defend) from the dragon threat.
