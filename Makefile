@@ -17,6 +17,15 @@ help:
 	@echo ""
 	@echo "build   – Build tweego"
 	@echo "install – Install tweego"
+	@echo "run     – Run tweego with story.twee"
 
 install:
 	flatpak-builder --user --install --force-clean $(BUILD_DIR) $(MANIFEST)
+
+public:
+	mkdir -p public
+
+run: story.twee public
+	flatpak run --filesystem=$(PWD)/story.twee:ro \
+		--filesystem=$(PWD)/public:rw $(NAME) \
+		-o public/index.html $<
