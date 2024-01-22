@@ -10,12 +10,16 @@ default: help
 build:
 	flatpak-builder --force-clean $(BUILD_DIR) $(MANIFEST)
 
+clean:
+	rm -rfv .flatpak-builder
+
 help:
 	@echo "Usage: make [command]"
 	@echo ""
 	@echo "Commands:"
 	@echo ""
 	@echo "build   – Build tweego"
+	@echo "clean   – Clean build cache"
 	@echo "install – Install tweego"
 	@echo "run     – Run tweego with story.twee"
 
