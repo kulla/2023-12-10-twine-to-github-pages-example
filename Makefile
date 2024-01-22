@@ -30,6 +30,4 @@ public:
 	mkdir -p public
 
 run: story.twee public
-	flatpak run --filesystem=$(PWD)/story.twee:ro \
-		--filesystem=$(PWD)/public:rw $(NAME) \
-		-o public/index.html $<
+	scripts/run.sh $(NAME) $< public/index.html
